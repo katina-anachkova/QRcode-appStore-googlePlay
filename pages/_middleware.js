@@ -3,7 +3,8 @@ import { NextResponse } from 'next/server'
 const appLinks = {
   iOS: 'https://apps.apple.com/bg/app/spot-bulgaria/id1590322235',
   Android:
-    'https://play.google.com/store/apps/details?id=bg.nepi.spot'
+    'https://play.google.com/store/apps/details?id=bg.nepi.spot',
+  Unknown: 'https://paradise-center.com/bg'
 }
 
 const getMobileOS = (userAgent) => {
@@ -19,7 +20,7 @@ const getMobileOS = (userAgent) => {
     return 'iOS'
   }
 
-  return 'unknown'
+  return 'Unknown'
 }
 
 const redirectMiddleware = (req) => {
