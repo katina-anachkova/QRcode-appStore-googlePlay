@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/_middleware",{
+
+/***/ "./pages/_middleware.js":
+/*!******************************!*\
+  !*** ./pages/_middleware.js ***!
+  \******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"./node_modules/next/server.js\");\n\nconst appLinks = {\n    iOS: 'https://apps.apple.com/bg/app/mega-mall-bulgaria/id1278923664',\n    Android: 'https://play.google.com/store/apps/details?id=com.megamallsofia.android'\n};\nconst getMobileOS = (userAgent)=>{\n    if (/windows phone/i.test(userAgent)) {\n        return 'Windows Phone';\n    }\n    if (/android/i.test(userAgent)) {\n        return 'Android';\n    }\n    if (/iPad|iPhone|iPod/.test(userAgent)) {\n        return 'iOS';\n    }\n    return 'unknown';\n};\nconst redirectMiddleware = (req)=>{\n    const os = getMobileOS(req.ua && req.ua.ua);\n    const link = appLinks[os];\n    return link ? next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.redirect(link) : next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.next();\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (redirectMiddleware);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fbWlkZGxld2FyZS5qcy5qcyIsIm1hcHBpbmdzIjoiOztBQUEwQztBQUUxQyxLQUFLLENBQUNDLFFBQVEsR0FBRyxDQUFDO0lBQ2hCQyxHQUFHLEVBQUUsQ0FBK0Q7SUFDcEVDLE9BQU8sRUFDTCxDQUF5RTtBQUM3RSxDQUFDO0FBRUQsS0FBSyxDQUFDQyxXQUFXLElBQUlDLFNBQVMsR0FBSyxDQUFDO0lBQ2xDLEVBQUUsbUJBQW1CQyxJQUFJLENBQUNELFNBQVMsR0FBRyxDQUFDO1FBQ3JDLE1BQU0sQ0FBQyxDQUFlO0lBQ3hCLENBQUM7SUFFRCxFQUFFLGFBQWFDLElBQUksQ0FBQ0QsU0FBUyxHQUFHLENBQUM7UUFDL0IsTUFBTSxDQUFDLENBQVM7SUFDbEIsQ0FBQztJQUVELEVBQUUscUJBQXFCQyxJQUFJLENBQUNELFNBQVMsR0FBRyxDQUFDO1FBQ3ZDLE1BQU0sQ0FBQyxDQUFLO0lBQ2QsQ0FBQztJQUVELE1BQU0sQ0FBQyxDQUFTO0FBQ2xCLENBQUM7QUFFRCxLQUFLLENBQUNFLGtCQUFrQixJQUFJQyxHQUFHLEdBQUssQ0FBQztJQUNuQyxLQUFLLENBQUNDLEVBQUUsR0FBR0wsV0FBVyxDQUFDSSxHQUFHLENBQUNFLEVBQUUsSUFBSUYsR0FBRyxDQUFDRSxFQUFFLENBQUNBLEVBQUU7SUFDMUMsS0FBSyxDQUFDQyxJQUFJLEdBQUdWLFFBQVEsQ0FBQ1EsRUFBRTtJQUV4QixNQUFNLENBQUNFLElBQUksR0FBR1gsOERBQXFCLENBQUNXLElBQUksSUFBSVgsMERBQWlCO0FBQy9ELENBQUM7QUFFRCwrREFBZU8sa0JBQWtCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3BhZ2VzL19taWRkbGV3YXJlLmpzPzUzM2QiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAnbmV4dC9zZXJ2ZXInXG5cbmNvbnN0IGFwcExpbmtzID0ge1xuICBpT1M6ICdodHRwczovL2FwcHMuYXBwbGUuY29tL2JnL2FwcC9tZWdhLW1hbGwtYnVsZ2FyaWEvaWQxMjc4OTIzNjY0JyxcbiAgQW5kcm9pZDpcbiAgICAnaHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5tZWdhbWFsbHNvZmlhLmFuZHJvaWQnXG59XG5cbmNvbnN0IGdldE1vYmlsZU9TID0gKHVzZXJBZ2VudCkgPT4ge1xuICBpZiAoL3dpbmRvd3MgcGhvbmUvaS50ZXN0KHVzZXJBZ2VudCkpIHtcbiAgICByZXR1cm4gJ1dpbmRvd3MgUGhvbmUnXG4gIH1cblxuICBpZiAoL2FuZHJvaWQvaS50ZXN0KHVzZXJBZ2VudCkpIHtcbiAgICByZXR1cm4gJ0FuZHJvaWQnXG4gIH1cblxuICBpZiAoL2lQYWR8aVBob25lfGlQb2QvLnRlc3QodXNlckFnZW50KSkge1xuICAgIHJldHVybiAnaU9TJ1xuICB9XG5cbiAgcmV0dXJuICd1bmtub3duJ1xufVxuXG5jb25zdCByZWRpcmVjdE1pZGRsZXdhcmUgPSAocmVxKSA9PiB7XG4gIGNvbnN0IG9zID0gZ2V0TW9iaWxlT1MocmVxLnVhICYmIHJlcS51YS51YSlcbiAgY29uc3QgbGluayA9IGFwcExpbmtzW29zXVxuXG4gIHJldHVybiBsaW5rID8gTmV4dFJlc3BvbnNlLnJlZGlyZWN0KGxpbmspIDogTmV4dFJlc3BvbnNlLm5leHQoKVxufVxuXG5leHBvcnQgZGVmYXVsdCByZWRpcmVjdE1pZGRsZXdhcmVcbiJdLCJuYW1lcyI6WyJOZXh0UmVzcG9uc2UiLCJhcHBMaW5rcyIsImlPUyIsIkFuZHJvaWQiLCJnZXRNb2JpbGVPUyIsInVzZXJBZ2VudCIsInRlc3QiLCJyZWRpcmVjdE1pZGRsZXdhcmUiLCJyZXEiLCJvcyIsInVhIiwibGluayIsInJlZGlyZWN0IiwibmV4dCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_middleware.js\n");
+
+/***/ })
+
+});
