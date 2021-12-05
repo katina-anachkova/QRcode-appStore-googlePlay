@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server'
 
 const appLinks = {
-  iOS: 'https://apps.apple.com/bg/app/mega-mall-bulgaria/id1278923664',
+  iOS: 'https://apps.apple.com/bg/app/spot-bulgaria/id1590322235',
   Android:
-    'https://play.google.com/store/apps/details?id=com.megamallsofia.android'
+    'https://play.google.com/store/apps/details?id=bg.nepi.spot'
 }
 
 const getMobileOS = (userAgent) => {
