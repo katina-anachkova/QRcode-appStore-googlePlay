@@ -1,0 +1,29 @@
+{
+  "name": "qrcode-appstore-googleplay",
+  "version": "1.0.0",
+  "description": "QR code detecting the device's OS and redirecting to either App Store or Google Play",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katina-anachkova/QRcode-appStore-googlePlay.git"
+  },
+  "keywords": [
+    "scan",
+    "qr",
+    "code",
+    "playstore",
+    "appstore"
+  ],
+  "author": "Katina Anachkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katina-anachkova/QRcode-appStore-googlePlay/issues"
+  },
+  "homepage": "https://github.com/katina-anachkova/QRcode-appStore-googlePlay#readme",
+  "dependencies": {
+    "lit-html": "^2.0.2"
+  }
+}
